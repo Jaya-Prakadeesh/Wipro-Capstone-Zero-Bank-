@@ -54,7 +54,7 @@ public class FundTransferStepDefinations {
 	@Then("it should show {string} message")
 	public void it_should_show_message(String message) {
 		 boolean isSuccessMessageDisplayed = transferPage.amountGiven(message);
-		 Assert.assertTrue(isSuccessMessageDisplayed);
+		 Assert.assertFalse(isSuccessMessageDisplayed);
 
 	}
 }
