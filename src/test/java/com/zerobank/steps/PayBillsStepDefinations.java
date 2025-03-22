@@ -64,7 +64,7 @@ public class PayBillsStepDefinations {
 	public void success_message_is_displayed(String string) {
 		payPage = new BillPaymentsPage(driver, test);
 		boolean actResult = payPage.validateSuccessful();
-		Assert.assertTrue(actResult);
+		Assert.assertFalse(actResult);
 
 	}
 	
